@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/logo/favicon.ico" />
+    <script async src="https://kit.fontawesome.com/1c136f2a4d.js" crossorigin="anonymous"></script>
+    <title>Booki</title>
+</head>
+
+<body>
+
+    <div class="body-contener">
+
+        <!-- HEADER -->
+        <header>
+
+            <!-- LOGO -->
+            <div class="header-logo">
+                <a href="./index.html"><img class="logo" src="images/logo/booki.png" alt="Logo de Booki"></a>
+            </div>
+
+            <!-- MENU -->
+            <nav class="header-menu">
+                <ul class="menu">
+                    <li class="header-menu-element"><a href="#lodging">Hébergements</a></li>
+                    <li class="header-menu-element"><a href="#activity">Activités</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- RESEARCH & FILTERS SECTION -->
+        <section class="research-and-filter">
+
+            <!-- RESEARCH -->
+            <div class="research-box">
+                <form class="research-formulaire">
+
+                    <!-- TITLE -->
+                    <div class="research-title">
+                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+
+                    <!-- BAR -->
+                    <div class="research-bar">
+
+                        <label class="research-label">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </label>
+
+                        <input class="research-input" type="search" name="research" id="research"
+                            placeholder=" Marseille, France">
+
+                        <button class="research-button">
+                            <span class="research-button_desktop">Rechercher</span>
+                            <span class="research-button_mobile"><i
+                                    class="research-logo fa-solid fa-magnifying-glass"></i></span>
+                        </button>
+
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- FILTERS -->
+            <div class="filter-box">
+                <div class="filter-bar">
+
+                    <!-- TITLE -->
+                    <div class="filter-bar-title">
+                        <h3>Filtres</h3>
+                    </div>
+
+                    <!-- ALL -->
+                    <div class="filters">
+
+                        <div class="filter">
+
+                            <div class="filter-logo">
+                                <i class="filtre-logo fa-solid fa-money-bill-wave"></i>
+                            </div>
+
+                            <div class="filter-description">
+                                <p>Economique</p>
+                            </div>
+
+                        </div>
+
+                        <div class="filter">
+
+                            <div class="filter-logo">
+                                <i class="filtre-logo fa-solid fa-person"></i>
+                            </div>
+
+                            <div class="filter-description">
+                                <p>Familial</p>
+                            </div>
+
+                        </div>
+
+                        <div class="filter">
+
+                            <div class="filter-logo">
+                                <i class="filtre-logo fa-solid fa-heart"></i>
+                            </div>
+
+                            <div class="filter-description">
+                                <p>Romantique</p>
+                            </div>
+
+                        </div>
+
+                        <div class="filter">
+
+                            <div class="filter-logo">
+                                <i class="fa-solid fa-dog"></i>
+                            </div>
+
+                            <div class="filter-description">
+                                <p>Animaux autorisées</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- MAIN -->
+        <main>
+
+            <!-- INFORMATION -->
+            <div class="main-information">
+                <i class="information-logo fa-solid fa-circle-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+            <div class="main-results">
+
+                <!-- LODGING -->
+                <section class="lodging-box" id="lodging">
+
+                    <!-- TITLE -->
+                    <div class="lodging-box-title">
+                        <h2>Hébergements à Marseille</h2>
+                    </div>
+
+                    <!-- ALL -->
+                    <div class="lodgings">
+
+                        <article class="card card_lodging">
+                            <a href="#">
+
+                                <div class="card-photo_lodging">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="images/lodging/large/canebiere_large.jpg">
+                                        <source media="(min-width: 768px) and (max-width: 991px)"
+                                            srcset="images/lodging/medium/canebiere_medium.jpg">
+                                        <source media="(max-width: 767px)"
+                                            srcset="images/lodging/small/canebiere_small.jpg">
+                                        <img class="card-photo" src="images/lodging/small/canebiere_small.jpg"
+                                            alt="Photo descriptive de l'Auberge La Cannebière">
+                                    </picture>
+                                </div>
+
+                                <div class="card-description_lodging">
+
+                                    <div class="card-title">
+                                        <h3>Auberge La Cannebière</h3>
+                                    </div>
+
+                                    <div class="card-price">
+                                        <p>Nuit à partir de 25€</p>
+                                    </div>
+
+                                    <div class="card-note">
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_grey fa-solid fa-star"></i>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </article>
+
+                        <article class="card card_lodging">
+                            <a href="#">
+
+                                <div class="card-photo_lodging">
+                                    <picture>
+                                        <source media="(min-width: 992px)" srcset="images/lodging/large/port_large.jpg">
+                                        <source media="(min-width: 768px) and (max-width: 991px)"
+                                            srcset="images/lodging/medium/port_medium.jpg">
+                                        <source media="(max-width: 767px)" srcset="images/lodging/small/port_small.jpg">
+                                        <img class="card-photo" src="images/lodging/small/port_small.jpg"
+                                            alt="Photo descriptive de l'Hôtel du port">
+                                    </picture>
+                                </div>
+
+                                <div class="card-description_lodging">
+
+                                    <div class="card-title">
+                                        <h3>Hôtel du port</h3>
+                                    </div>
+
+                                    <div class="card-price">
+                                        <p>Nuit à partir de 52€</p>
+                                    </div>
+
+                                    <div class="card-note">
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_grey fa-solid fa-star"></i>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </article>
+
+                        <article class="card card_lodging">
+                            <a href="#">
+
+                                <div class="card-photo_lodging">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="images/lodging/large/mouettes_large.jpg">
+                                        <source media="(min-width: 768px) and (max-width: 991px)"
+                                            srcset="images/lodging/medium/mouettes_medium.jpg">
+                                        <source media="(max-width: 767px)"
+                                            srcset="images/lodging/small/mouettes_small.jpg">
+                                        <img class="card-photo" src="images/lodging/small/mouettes_small.jpg"
+                                            alt="Photo descriptive de l'Hôtel Les mouettes">
+                                    </picture>
+                                </div>
+
+                                <div class="card-description_lodging">
+
+                                    <div class="card-title">
+                                        <h3>Hôtel Les mouettes</h3>
+                                    </div>
+
+                                    <div class="card-price">
+                                        <p>Nuit à partir de 76€</p>
+                                    </div>
+
+                                    <div class="card-note">
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_grey fa-solid fa-star"></i>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </article>
+
+                        <article class="card card_lodging">
+                            <a href="#">
+
+                                <div class="card-photo_lodging">
+                                    <picture>
+                                        <source media="(min-width: 992px)" srcset="images/lodging/large/mer_large.jpg">
+                                        <source media="(min-width: 768px) and (max-width: 991px)"
+                                            srcset="images/lodging/medium/mer_medium.jpg">
+                                        <source media="(max-width: 767px)" srcset="images/lodging/small/mer_small.jpg">
+                                        <img class="card-photo" src="images/lodging/small/mer_small.jpg"
+                                            alt="Photo descriptive de l'Hôtel de la mer">
+                                    </picture>
+                                </div>
+
+                                <div class="card-description_lodging">
+
+                                    <div class="card-title">
+                                        <h3>Hôtel de la mer</h3>
+                                    </div>
+
+                                    <div class="card-price">
+                                        <p>Nuit à partir de 46€</p>
+                                    </div>
+
+                                    <div class="card-note">
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_grey fa-solid fa-star"></i>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="card card_lodging">
+                            <a href="#">
+
+                                <div class="card-photo_lodging">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="images/lodging/large/panier_large.jpg">
+                                        <source media="(min-width: 768px) and (max-width: 991px)"
+                                            srcset="images/lodging/medium/panier_medium.jpg">
+                                        <source media="(max-width: 767px)"
+                                            srcset="images/lodging/small/panier_small.jpg">
+                                        <img class="card-photo" src="images/lodging/small/panier_small.jpg"
+                                            alt="Photo descriptive de l'Auberge Le Panier">
+                                    </picture>
+                                </div>
+
+                                <div class="card-description_lodging">
+
+                                    <div class="card-title">
+                                        <h3>Auberge Le Panier</h3>
+                                    </div>
+
+                                    <div class="card-price">
+                                        <p>Nuit à partir de 23€</p>
+                                    </div>
+
+                                    <div class="card-note">
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_grey fa-solid fa-star"></i>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="card card_lodging">
+                            <a href="#">
+
+                                <div class="card-photo_lodging">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="images/lodging/large/amina_large.jpg">
+                                        <source media="(min-width: 768px) and (max-width: 991px)"
+                                            srcset="images/lodging/medium/amina_medium.jpg">
+                                        <source media="(max-width: 767px)"
+                                            srcset="images/lodging/small/amina_small.jpg">
+                                        <img class="card-photo" src="images/lodging/small/amina_small.jpg"
+                                            alt="Photo descriptive de l'Hôtel Chez Amina">
+                                    </picture>
+                                </div>
+
+                                <div class="card-description_lodging">
+
+                                    <div class="card-title">
+                                        <h3>Hôtel Chez Amina</h3>
+                                    </div>
+
+                                    <div class="card-price">
+                                        <p>Nuit à partir de 96€</p>
+                                    </div>
+
+                                    <div class="card-note">
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_blue fa-solid fa-star"></i>
+                                        <i class="card-logo_grey fa-solid fa-star"></i>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+
+                    <!-- MORE -->
+                    <div class="lodging-box-more">
+                        <h3><a href="#">Afficher plus</a></h3>
+                    </div>
+
+                </section>
+
+                <!-- POPULAR -->
+                <section class="popular-box">
+                    <div class="popular-box-contener">
+
+                        <!-- TITLE -->
+                        <div class="popular-box-title">
+
+                            <div>
+                                <h2>Les plus populaires</h2>
+                            </div>
+
+                            <div>
+                                <i class="popular-logo fa-solid fa-chart-line"></i>
+                            </div>
+
+                        </div>
+
+                        <!-- ALL -->
+                        <div class="populars">
+
+                            <article class="card card_popular">
+                                <a href="#">
+                                    <div class="card_popular_contener">
+
+                                        <div class="card-photo_popular">
+                                            <picture>
+                                                <source media="(min-width: 992px)"
+                                                    srcset="images/popular/large/soleil_large.jpg">
+                                                <source media="(min-width: 768px) and (max-width: 991px)"
+                                                    srcset="images/popular/medium/soleil_medium.jpg">
+                                                <source media="(max-width: 767px)"
+                                                    srcset="images/popular/small/soleil_small.jpg">
+                                                <img class="card-photo" src="images/popular/small/soleil_small.jpg"
+                                                    alt="Photo descriptive de l'Hôtel Le soleil du matin">
+                                            </picture>
+                                        </div>
+
+                                        <div class="card-description_popular">
+
+                                            <div class="card-label">
+
+                                                <div class="card-title">
+                                                    <h3>Hôtel Le soleil du matin</h3>
+                                                </div>
+
+                                                <div class="card-price">
+                                                    <p>Nuit à partir de 128€</p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="card-note-popular">
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_grey fa-solid fa-star"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="card card_popular">
+                                <a href="#">
+                                    <div class="card_popular_contener">
+
+                                        <div class="card-photo_popular">
+                                            <picture>
+                                                <source media="(min-width: 992px)"
+                                                    srcset="images/popular/large/eau_large.jpg">
+                                                <source media="(min-width: 768px) and (max-width: 991px)"
+                                                    srcset="images/popular/medium/eau_medium.jpg">
+                                                <source media="(max-width: 767px)"
+                                                    srcset="images/popular/small/eau_small.jpg">
+                                                <img class="card-photo" src="images/popular/small/eau_small.jpg"
+                                                    alt="Photo descriptive des Chambres d'hôtes Au coeur de l'eau">
+                                            </picture>
+                                        </div>
+
+                                        <div class="card-description_popular">
+
+                                            <div class="card-label">
+
+                                                <div class="card-title">
+                                                    <h3>Chambres d'hôtes Au coeur de l'eau</h3>
+                                                </div>
+
+                                                <div class="card-price">
+                                                    <p>Nuit à partir de 71€</p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="card-note-popular">
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_grey fa-solid fa-star"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="card card_popular">
+                                <a href="#">
+                                    <div class="card_popular_contener">
+
+                                        <div class="card-photo_popular">
+                                            <picture>
+                                                <source media="(min-width: 992px)"
+                                                    srcset="images/popular/large/bleu_large.jpg">
+                                                <source media="(min-width: 768px) and (max-width: 991px)"
+                                                    srcset="images/popular/medium/bleu_medium.jpg">
+                                                <source media="(max-width: 767px)"
+                                                    srcset="images/popular/small/bleu_small.jpg">
+                                                <img class="card-photo" src="images/popular/small/bleu_small.jpg"
+                                                    alt="Photo descriptive de l'Hôtel Bleu et Blanc">
+                                            </picture>
+                                        </div>
+
+                                        <div class="card-description_popular">
+                                            <div class="card-label">
+
+                                                <div class="card-title">
+                                                    <h3>Hôtel Bleu et Blanc</h3>
+                                                </div>
+
+                                                <div class="card-price">
+                                                    <p>Nuit à partir de 68€</p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="card-note-popular">
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_blue fa-solid fa-star"></i>
+                                                <i class="card-logo_grey fa-solid fa-star"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </article>
+
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+
+        <!-- ACTIVITY -->
+        <aside id="activity">
+
+            <!-- TITLE-->
+            <div class="aside-title">
+                <h2>Activités à Marseille</h2>
+            </div>
+
+            <!-- ALL -->
+            <div class="activities">
+
+                <article class="card card_activity">
+                    <a href="#">
+
+                        <div class="card-photo_activity">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/activity/large/vieux-port_large.jpg">
+                                <source media="(min-width: 768px) and (max-width: 991px)"
+                                    srcset="images/activity/medium/vieux-port_medium.jpg">
+                                <source media="(max-width: 767px)" srcset="images/activity/small/vieux-port_small.jpg">
+                                <img class="card-photo" src="images/activity/small/vieux-port_small.jpg"
+                                    alt="Photo descriptive du Vieux-Port">
+                            </picture>
+                        </div>
+
+                        <div class="card-description_activity">
+
+                            <div class="card-title">
+                                <h3>Vieux-Port</h3>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </article>
+
+                <article class="card card_activity">
+                    <a href="#">
+
+                        <div class="card-photo_activity">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/activity/large/pomegues_large.jpg">
+                                <source media="(min-width: 768px) and (max-width: 991px)"
+                                    srcset="images/activity/medium/pomegues_medium.jpg">
+                                <source media="(max-width: 767px)" srcset="images/activity/small/pomegues_small.jpg">
+                                <img class="card-photo" src="images/activity/small/pomegues_small.jpg"
+                                    alt="Photo descriptive du Fort de Pomègues">
+                            </picture>
+                        </div>
+
+                        <div class="card-description_activity">
+
+                            <div class="card-title">
+                                <h3>Fort de Pomègues</h3>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </article>
+
+                <article class="card card_activity">
+                    <a href="#">
+
+                        <div class="card-photo_activity">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/activity/large/calanques_large.jpg">
+                                <source media="(min-width: 768px) and (max-width: 991px)"
+                                    srcset="images/activity/medium/calanques_medium.jpg">
+                                <source media="(max-width: 767px)" srcset="images/activity/small/calanques_small.jpg">
+                                <img class="card-photo" src="images/activity/small/calanques_small.jpg"
+                                    alt="Photo descriptive du Parc national des Calanques">
+                            </picture>
+                        </div>
+
+                        <div class="card-description_activity">
+
+                            <div class="card-title">
+                                <h3>Parc national des Calanques</h3>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </article>
+
+                <article class="card card_activity">
+                    <a href="#">
+
+                        <div class="card-photo_activity">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/activity/large/notre-dame_large.jpg">
+                                <source media="(min-width: 768px) and (max-width: 991px)"
+                                    srcset="images/activity/medium/notre-dame_medium.jpg">
+                                <source media="(max-width: 767px)" srcset="images/activity/small/notre-dame_small.jpg">
+                                <img class="card-photo" src="images/activity/small/notre-dame_small.jpg"
+                                    alt="Photo descriptive de Notre-Dame-de-la-Garde">
+                            </picture>
+                        </div>
+
+                        <div class="card-description_activity">
+
+                            <div class="card-title">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </article>
+
+            </div>
+
+        </aside>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <ul class="footer-menu">
+                <li>
+                    <h3>A Propos</h3>
+                </li>
+                <li class="footer-element"><a href="#">Fonctionnement du site</a></li>
+                <li class="footer-element"><a href="#">Conditions générales</a></li>
+                <li class="footer-element"><a href="#">Données et confidentialité</a></li>
+            </ul>
+
+            <ul class="footer-menu">
+                <li>
+                    <h3>Nos hébergements</h3>
+                </li>
+                <li class="footer-element"><a href="#">Charte qualité</a></li>
+                <li class="footer-element"><a href="#">Proposer votre hôtel</a></li>
+            </ul>
+
+            <ul class="footer-menu">
+                <li>
+                    <h3>Assistance</h3>
+                </li>
+                <li class="footer-element"><a href="#">Centre d'aide</a></li>
+                <li class="footer-element"><a href="#">Nous contacter</a></li>
+            </ul>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
